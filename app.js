@@ -59,7 +59,7 @@ async function start(client) {
                     }
                 }
             ]
-            await client.sendButtons('34641009503@c.us', 'Terminos y condiciones', buttons, 'Esta de acuerdo con nuestra politica de trartamiento de datos para iniciar con tu solicitud')
+            await client.sendButtons(message.from, 'Terminos y condiciones', buttons, 'Esta de acuerdo con nuestra politica de trartamiento de datos para iniciar con tu solicitud')
                 .then((result) => {
                     console.log('Result: ', result); //return object success
                 })
